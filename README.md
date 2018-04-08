@@ -3,7 +3,7 @@ Checks consistency between two csv data
 
 
 All the tests are in the spec folder. To run tests, run rspec spec
-![Alt text](relative/path/to/rspec_tests.png?raw=true "Title")
+![Alt text](rspec_tests.png?raw=true "Title")
 
 
 To run the command line tool, run : 
