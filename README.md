@@ -25,6 +25,7 @@ Account Email, YouTube Channel, Subscriber Count
 
 
 Example files:
+
 CSV 1
 
 Account Email, YouTube Channel, Subscriber Count
@@ -88,6 +89,8 @@ test_57@gmail.com,Phv_Fz6YkjqbWI11IhScOQ,89
 test_58@gmail.com,UCiQ4x3FbxB9yPETGlvevbJQ,246
 test_59@gmail.com,http://youtube.com/channel/UCg0zJnmieAtkq0evFcgt97w,29
 test_60@gmail.com,054PSI_p4hjVVQUUWTxv4Q,"19,223"
+
+
 CSV 2
 
 Account Email, YouTube Channel, Subscriber Count
