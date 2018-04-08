@@ -7,7 +7,6 @@ class DataProcessor
 	def initialize
 		@hash1 = Hash.new
 		@hash2 = Hash.new		
-
 	end
 
 	# The only public interface for users as per requirements
