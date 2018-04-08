@@ -2,20 +2,29 @@
 Checks consistency between two csv data 
 
 
-All the tests are in the spec folder. To run tests, run rspec spec
+All the tests are in the spec folder. To run tests, run rspec spec as shown below:
 ![Alt text](rspec_tests.png?raw=true "Title")
 
 
 To run the command line tool, run : 
 <b>ruby run_script.rb csv1.csv csv2.csv</b>
 
-To add concerns run: <b>ruby run_script.rb csv1.csv csv2.csv channel_ownership</b> or <b>ruby run_script.rb csv1.csv csv2.csv subscriber_count</b>
+To add concerns run: <b>ruby run_script.rb csv1.csv csv2.csv channel_ownership</b> 
+
+or 
+
+<b>ruby run_script.rb csv1.csv csv2.csv subscriber_count</b>
+
+As shown below: 
+
+![Alt text](run_script.png?raw=true "Title")
 
 
-![Alt text](relative/path/to/run_script.png?raw=true "Title")
-
+Header of the files are:
 Account Email, YouTube Channel, Subscriber Count
 
+
+Example files:
 CSV 1
 
 Account Email, YouTube Channel, Subscriber Count
