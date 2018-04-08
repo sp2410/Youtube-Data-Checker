@@ -2,7 +2,7 @@ require 'csv'
 
 class DataProcessor	
 
-	attr_reader :hash1, :hash2
+	attr_reader :hash1, :hash2 #mainly for testing the state of hashes
 
 	def initialize
 		@hash1 = Hash.new
@@ -10,7 +10,7 @@ class DataProcessor
 
 	end
 
-	#only public interface for users as per requirements
+	# The only public interface for users as per requirements
 
 	def yt_data_checker(file1, file2, concern = nil)
 		if file1 and file2		
@@ -47,9 +47,7 @@ class DataProcessor
 		output = []
 
 		@hash2.each do |key, value|
-			if @hash1.key?(key)		
-				# puts "#{@hash1[key]} #{@hash2[key]}"
-				# puts "------------------"
+			if @hash1.key?(key)						
 				unless same_data(@hash1[key], @hash2[key], concern)
 					output << key
 				end				
@@ -64,9 +62,7 @@ class DataProcessor
 	end
 
 
-	def same_data(data1, data2, concern = nil)
-		#puts "#{data1["Account Email"]} #{data2["Account Email"]}"
-		#puts "------------------"
+	def same_data(data1, data2, concern = nil)		
 		return false unless data1["Account Email"] == data2["Account Email"]
 
 		if concern
@@ -79,7 +75,7 @@ class DataProcessor
 			same_youtube_channel(data1[" YouTube Channel"], data2[" YouTube Channel"]) and same_subscriber_count(data1[" Subscriber Count"], data2[" Subscriber Count"]) ? true : false
 		end
 
-		#p "hello"
+		
 	end
 
 
