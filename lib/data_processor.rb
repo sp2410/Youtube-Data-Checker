@@ -4,6 +4,11 @@ class DataProcessor
 
 	attr_reader :hash1, :hash2 #mainly for testing the state of hashes
 
+	#Here I am using hash from memory itself but if the file size is really huge, it would cause problems in production. 
+	# In that case, I will use database and store the data in tables and then run my function using active record query. 
+	# But, here for this case and given small test cases, I am going ahead with using memory itself.
+
+
 	def initialize
 		@hash1 = Hash.new
 		@hash2 = Hash.new		
